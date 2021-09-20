@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
+import { HomePage } from '../pages/home/home';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -7,7 +8,9 @@ import { TabsPage } from '../pages/tabs/tabs';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = TabsPage;
+  // rootPage:any = TabsPage;
+
+  rootPage:any = HomePage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
